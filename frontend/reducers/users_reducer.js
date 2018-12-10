@@ -9,4 +9,4 @@ const usersReducer = (oldState = {}, action) => {
   }
 };
 
-export default usersReducers;
+export default usersReducer;

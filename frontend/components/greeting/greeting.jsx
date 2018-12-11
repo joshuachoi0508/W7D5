@@ -10,10 +10,10 @@ const Greeting = ({ currentUser, logout }) => {
   )
 
   const personalGreeting = () => (
-    <hrgroup className="header-group">
+    <nav className="header-group">
       <h2>Welcome, {currentUser.username}!</h2>
       <button className="header-button" onClick={logout}>Log Out</button>
-    </hrgroup>
+    </nav>
   )
 
   if (currentUser) {
@@ -22,3 +22,5 @@ const Greeting = ({ currentUser, logout }) => {
     return sessionLinks();
   };
 }
+
+export default Greeting;

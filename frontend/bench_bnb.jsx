@@ -13,5 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.dispatch = store.dispatch;
   window.login = login;
 
-  ReactDOM.render(<h1>We are in the app</h1>, root);
+  ReactDOM.render(
+    <Root store={store} />,
+    root);
 });
